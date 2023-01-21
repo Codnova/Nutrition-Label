@@ -1,1 +1,76 @@
-.
+* {
+  box-sizing: border-box; /*Removes the extra padding and border added by the browser*/
+}
+
+body {
+  font-family: "Open Sans", sans-serif; /*Sets open sans as the main font and sans-serif as the fallback*/
+}
+
+html{
+  font-size: 16px;
+}
+
+.label {
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto; /*centers the label and gives 20px of space from the top */
+  padding: 0 7px; /*Removes the bottom and upper padding and gives 7px of padding on the sides */
+
+}
+
+header h1{
+  text-align: center; /*Centers the text of the heading*/
+  margin: -4px 0;
+  letter-spacing: 0.15px;
+}
+
+p {
+  margin: 0; /*Removes margin from the p element to reduce the space between lines*/
+  display: flex; 
+  justify-content: space-between; /*Put the serving size to the right of the label */
+}
+
+.divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0; /*Separates the line a bit from the h1 heading */
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.large { 
+  height: 10px;
+}
+
+.large, .medium {
+  background-color: black;
+  border: 0;
+}
+
+.small-text {
+  font-size: 0.85rem; /* rem = relative to the html root element with font size of 16px*/
+}
+
+.calories-info h2{ /*Removes margin spacing of the h2 heading*/
+  margin: 0;
+}
+
+.calories-info{
+  margin: 0;
+  display: flex; 
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.left-container p{ /* sets the font weight and size of the Calorie string*/
+  margin: -5px -2px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.calories-info span { /* sets the font weight and size of the number of calories*/
+  font-size: 2.4em;
+  font-weight: 700;
+  margin: -7px -2px; /*Moves the calorie number until it's aligned with the label*/
+}
